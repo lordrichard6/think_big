@@ -8,15 +8,15 @@ const footerItems = [
     },
     {
         name:'Privacy Policy', 
-        link:"/",
+        link:"/privacy-policy",
     },
     {
         name:'Disclaimer', 
-        link:"/",
+        link:"/disclaimer",
     },
     {
         name:'Customer Support', 
-        link:"/",
+        link:"/support",
     }
 ]
 const facebookAssociation = 'This site is not a part of the Facebook website or Facebook Inc. Additionally, this site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.'
@@ -26,13 +26,13 @@ export default function FooterComponent() {
     return (
         <footer className="flex flex-col justify-center items-center w-screen bg-primary-color text-alt text-sm md:text-md px-4 md:px-[200px] py-12">
             <p>{copyright}</p>
-            <div className="flex my-4">
+            <div className="flex my-4 justify-center items-center text-center">
                 {footerItems.map((item, i) => {
-                    return <p className='cursor-pointer underline mx-4' key={i}><Link to={item.link}>{item.name}</Link></p>
+                    return <p className='cursor-pointer text-xs lg:text-sm underline mx-2 lg:mx-4' key={i}><Link to={item.link}>{item.name}</Link></p>
                 })}
             </div>
             <div className="">
-                <p>{facebookAssociation}</p>
+                <p className="mb-2">{facebookAssociation}</p>
                 <p>{disclaimer}</p>
             </div>
         </footer>

@@ -7,8 +7,8 @@ import { TbBulbFilled } from "react-icons/tb";
 export const navItems = [
   { name: "home", link: "/" },
   { name: "about", link: "/about" },
-  { name: "login/signin", link: "/signin" },
-  { name: "contact", link: "/contact" },
+  { name: "login/signin", link: "/login" },
+  { name: "contact", link: "/support" },
 ];
 
 export default function NavbarComponent({ toggle }) {
@@ -55,9 +55,10 @@ export default function NavbarComponent({ toggle }) {
           onClick={toggle}
           className="flex relative justify-center items-center md:hidden text-4xl z-50"
         >
-          <div onClick={handleClick}>
+          <FaRegLightbulb />
+          {/* <div onClick={handleClick}>
             {clicked ? <TbBulbFilled /> : <FaRegLightbulb />}
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>

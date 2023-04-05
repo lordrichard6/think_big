@@ -1,6 +1,6 @@
 export default function TermsOfService() {
     return (
-        <div className="w-screen bg-slate-100 py-28 terms-text flex justify-center">
+        <div className="w-screen px-6 bg-slate-100 py-28 terms-text flex justify-center">
             <div className="terms text-primary text-secondary-color">
                 <p>
                     <strong>Terms of Service</strong>
@@ -84,7 +84,101 @@ export default function TermsOfService() {
                 <p>
                     <strong>Disclaimers</strong>
                 </p>
+                <p >
+                    {`Throughout the Site, we may provide links and pointers to Internet sites maintained by third parties. Our 
+                    linking to such third-party sites does not imply an endorsement or sponsorship of such sites, or the 
+                    information, products or services offered on or through the sites. In addition, neither we nor affiliates 
+                    operate or control in any respect any information, products or services that third parties may provide on or 
+                    through the Site or on websites linked to by us on the Site.`}
+                </p>
+                <p >
+                    {`If applicable, any opinions, advice, statements, services, offers, or other information or content expressed 
+                    or made available by third parties, including information providers, are those of the respective authors or 
+                    distributors, and not THINK BIG. Neither THINK BIG nor any third-party provider of information 
+                    guarantees the accuracy, completeness, or usefulness of any content. Furthermore, THINK BIG neither 
+                    endorses nor is responsible for the accuracy and reliability of any opinion, advice, or statement made on 
+                    any of the Sites by anyone other than an authorized THINK BIG representative while acting in his/her 
+                    official capacity.`}
+                </p>
+                <p >
+                    {`THE INFORMATION, PRODUCTS AND SERVICES OFFERED ON OR THROUGH THE SITE AND BY 
+                    THINK BIG AND ANY THIRD-PARTY SITES ARE PROVIDED “AS IS” AND WITHOUT WARRANTIES OF 
+                    ANY KIND EITHER EXPRESS OR IMPLIED. TO THE FULLEST EXTENT PERMISSIBLE PURSUANT TO 
+                    APPLICABLE LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT 
+                    LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR 
+                    PURPOSE. WE DO NOT WARRANT THAT THE SITE OR ANY OF ITS FUNCTIONS WILL BE 
+                    UNINTERRUPTED OR ERROR-FREE, THAT DEFECTS WILL BE CORRECTED, OR THAT ANY PART OF THIS 
+                    SITE, INCLUDING BULLETIN BOARDS, OR THE SERVERS THAT MAKE IT AVAILABLE, ARE FREE OF 
+                    VIRUSES OR OTHER HARMFUL COMPONENTS.`}
+                </p>
+                <p >
+                    {`WE DO NOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE USE OR THE RESULTS OF 
+                    THE USE OF THE SITE OR MATERIALS ON THIS SITE OR ON THIRD-PARTY SITES IN TERMS OF THEIR 
+                    CORRECTNESS, ACCURACY, TIMELINESS, RELIABILITY OR OTHERWISE.`}
+                </p>
+                <p >
+                    {`You agree at all times to defend, indemnify and hold harmless THINK BIG its affiliates, their 
+                    successors, transferees, assignees and licensees and their respective parent and subsidiary companies, 
+                    agents, associates, officers, directors, shareholders and employees of each from and against any and all 
+                    claims, causes of action, damages, liabilities, costs and expenses, including legal fees and expenses, arising 
+                    out of or related to your breach of any obligation, warranty, representation or covenant  set forth herein.`}
+                </p>
+                <p>
+                    <strong>Online Commerce</strong>
+                </p>
+                <p >
+                    {`Certain sections of the Site may allow you to purchase many different types of products and services online 
+                    that are provided by third parties. We are not responsible for the quality, accuracy, timeliness, reliability or 
+                    any other aspect of these products and services. If you make a purchase from a merchant on the Site or on a 
+                    site linked to by the Site, the information obtained during your visit to that merchant’s online store or site, 
+                    and the information that you give as part of the transaction, such as your credit card number and contact 
+                    information, may be collected by both the merchant and us. A merchant may have privacy and data 
+                    collection practices that are different from ours. We have no responsibility or liability for these independent 
+                    policies. In addition, when you purchase products or services on or through the Site, you may be subject to 
+                    additional terms and conditions that specifically apply to your purchase or use of such products or services. 
+                    For more information regarding a merchant, its online store, its privacy policies, and/or any additional terms 
+                    and conditions that may apply, visit that merchant’s website and click on its information links or contact the 
+                    merchant directly. You release us and our affiliates from any damages that you incur, and agree not to assert 
+                    any claims against us or them, arising from your purchase or use of any products or services made available 
+                    by third parties through the Site.`}
+                </p>
+                <p >
+                    {`Your participation, correspondence or business dealings with any third party found on or through our Site, 
+                    regarding payment and delivery of specific goods and services, and any other terms, conditions, 
+                    representations or warranties associated with such dealings, are solely between you and such third party. 
+                    You agree that THINK BIG shall not be responsible or liable for any loss, damage, or other matters of 
+                    any sort incurred as the result of such dealings.`}
+                </p>
+                <p >
+                    {`You agree to be financially responsible for all purchases made by you or someone acting on your behalf 
+                    through the Site. You agree to use the Site and to purchase services or products through the Site for 
+                    legitimate, non-commercial purposes only. You also agree not to make any purchases for speculative, false 
+                    or fraudulent purposes or for the purpose of anticipating demand for a particular product or service. You 
+                    agree to only purchase goods or services for yourself or for another person for whom you are legally 
+                    permitted to do so. When making a purchase for a third party that requires you to submit the third party’s 
+                    personal information to us or a merchant, you represent that you have obtained the express consent of such 
+                    third party to provide such third party’s personal information.`}
+                </p>
+                <p>
+                    <strong>Termination</strong>
+                </p>
+                <p >
+                    {`We may cancel or terminate your right to use the Site or any part of the Site at any time without notice. In 
+                    the event of cancellation or termination, you are no longer authorized to access the part of the Site affected 
+                    by such cancellation or termination. The restrictions imposed on you with respect to material downloaded 
+                    from the Site, and the disclaimers and limitations of liabilities set forth in these Terms of Service, shall 
+                    survive.`}
+                </p>
+                <p>
+                    <strong>Refund Policy</strong>
+                </p>
+                <p >
+                    {`Your purchase of a product or service or ticket to an event may or may not provide for any refund.  Each 
+                    specific product, service, event or course will specify its own refund policy.`}
+                </p>
             </div>
         </div>
     );
 }
+
+// This terms was taken from https://growthcave.com/tos with the purpose to simulate a real website

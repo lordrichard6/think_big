@@ -13,7 +13,7 @@ const aboutPage = {
 export default function AboutHeader() {
     return (
         <section className="w-full md:h-[80vh] flex flex-col md:flex-row justify-center items-center px-8 md:px-[200px] mb-20 md:mb-40">
-            <div className="">
+            <div className="z-10">
                 <img className="px-6 md:px-0 z-10" src={aboutPage.image} alt="" />
             </div>
             <div className="md:ml-6 mt-4 md:mt-0 z-10">

@@ -73,6 +73,10 @@ code {
     @apply my-6;
 }
 
+.terms a {
+    @apply underline break-words  ;
+}
+
 @keyframes move {
     100% {
         transform: translate3d(0, 0, 1px) rotate(360deg);

@@ -25,12 +25,34 @@ code {
         monospace;
 }
 
-
 .scrolled {
     position: fixed;
     top: 0;
     background-color: #A4C18B;
     color: #384230;
+}
+
+#navbar li {
+    position: relative;
+}
+
+#navbar li a {
+    transition: 0.3s ease-in-out;
+}
+
+#navbar li a:hover {
+    //background: #384230;
+}
+
+#navbar li a:hover::after,
+#navbar li a:active::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: #384230;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
 }
 
 .skewed {

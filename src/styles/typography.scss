@@ -17,3 +17,8 @@ body {
 .text-secondary {
   @apply text-lg md:text-xl font-normal leading-relaxed whitespace-pre-line;
 }
+
+.nav-items {
+  font-family: "Kantumruy Pro", sans-serif;
+  @apply text-lg;
+}

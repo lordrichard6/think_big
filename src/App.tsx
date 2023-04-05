@@ -1,22 +1,23 @@
-import React from 'react';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-const navItems = ['home', 'about', 'login/signin', 'contact']
+import Layout from './components/Layout'
+import Home from "./pages/Home";
+import Page404 from "./pages/Page404";
+import AboutPage from "./pages/About";
+import TermsOfService from "./pages/Terms";
 
 function App() {
   return (
-    <div className="w-screen h-screen bg-slate-100">
-      <div className="w-screen h-screen bg-home-bg bg-center bg-cover px-[200px]">
-        <nav className='h-10 flex justify-between'>
-          <img className='h-full' src="/logo.png" alt="think big logo" />
-          <div className="nav-items uppercase w-1/2 flex justify-between items-center">
-            {navItems.map((item, i) => {
-              return <p className='cursor-pointer hover:underline underline-offset-4' key={i}>{item}</p>
-            })}
-          </div>
-        </nav>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/termsofservice" element={<TermsOfService />} />
+          <Route path="*" element={<Page404 />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

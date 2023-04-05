@@ -7,7 +7,8 @@ module.exports = {
         'home-bg': "url('/public/images/home_background.png')",
       },
       colors: {
-        'pimary-color': '#A4C18B',
+        'primary-color': '#A4C18B',
+        'secondary-color': '#384230',
       },
     },
   },

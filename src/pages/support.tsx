@@ -2,7 +2,7 @@
 export default function CustomerSupport() {
     return (
         <div className="w-screen min-h-screen px-6 bg-slate-100 py-28 terms-text flex flex-col justify-center items-center">
-            <div className="terms w-full text-primary text-secondary-color">
+            <div className="terms w-fit text-primary text-secondary-color">
                 <p>
                     <h1 className="text-3xl md:text-5xl"><strong>We'd Love To Hear From You</strong></h1>
                 </p>

@@ -24,7 +24,7 @@ export default function AboutThirdSection() {
                 <img className="w-[460px] h-fit" src={aboutPage.image} alt="" />
                 <p className='text-secondary text-secondary-color mt-4 md:ml-10'>{aboutPage.text}</p>
             </div>
-            <MainCTAComponent color="bg-primary-color" buttonText={aboutPage.btn} link="/signin" />
+            <MainCTAComponent color="bg-primary-color" buttonText={aboutPage.btn} link="/support" />
         </section>
     );
 }

@@ -24,7 +24,7 @@ const disclaimer = 'DISCLAIMER: The sales figures stated above are my personal s
 
 export default function FooterComponent() {
     return (
-        <footer className="flex flex-col justify-center items-center w-screen bg-primary-color text-alt text-md px-[200px] py-12">
+        <footer className="flex flex-col justify-center items-center w-screen bg-primary-color text-alt text-sm md:text-md px-4 md:px-[200px] py-12">
             <p>{copyright}</p>
             <div className="flex my-4">
                 {footerItems.map((item, i) => {

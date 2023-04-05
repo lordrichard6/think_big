@@ -24,18 +24,18 @@ const testimonials: testimonial[] = [
 
 export default function TestimonialsComponent() {
   return (
-    <section className="relative w-full h-[900px]">
+    <section className="relative w-full h-[800px] md:h-[900px]">
       <div className="skewed" />
-      <div className="relative text-slate-100 px-[200px] pt-20">
-        <h1 className='text-5xl font-bold text-center'>{title}</h1>
+      <div className="relative text-slate-100 px-8 md:px-[200px] pt-20">
+        <h1 className='text-3xl md:text-5xl font-bold text-center'>{title}</h1>
         <div className="w-full flex justify-center items-start mt-10">
           {testimonials.map((item, i) => {
             return (
-              <div key={i} className="flex flex-col justify-center items-center w-[280px]">
-                <div className="w-[200px] h-[200px] rounded-full bg-slate-100 p-1">
+              <div key={i} className="flex flex-col justify-center items-center w-[280px] mx-4">
+                <div className="w-[180px] md:w-[200px] h-[180px] md:h-[200px] rounded-full bg-slate-100 p-1">
                   <img className='w-full h-full rounded-full' src={item.image} alt="" />
                 </div>
-                <p className='text-primary mx-10 mt-4'>{item.text}</p>
+                <p className='text-primary md:mx-10 mt-4'>{item.text}</p>
               </div>
             )
           })}

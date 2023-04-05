@@ -27,18 +27,18 @@ And now – I finally knew exactly what to build.`
 
 export default function MyStoryComponent() {
   return (
-    <section className="h-full flex flex-col justify-center items-center px-[260px]">
-      <h1 className='text-5xl font-bold text-secondary-color text-center max-w-[860px] mt-16'>{title}</h1>
-      <div className="bg-primary-color rounded-2xl py-16 px-16 my-20 max-w-[1040px]">
+    <section className="h-full flex flex-col justify-center items-center px-8 md:px-[260px]">
+      <h1 className='text-3xl md:text-5xl font-bold text-secondary-color text-center max-w-[860px] mt-16'>{title}</h1>
+      <div className="bg-primary-color rounded-2xl p-8 md:p-16 my-10 md:my-20 max-w-[1040px]">
         <div className="flex flex-col justify-center items-center">
-          <div className="w-[280px] h-[280px] rounded-full bg-secondary-color p-1 mb-6">
+          <div className="w-[240px] md:w-[280px] h-[240px] md:h-[280px] rounded-full bg-secondary-color p-1 mb-6">
             <img className='w-full h-full rounded-full' src={myAvatar} alt="" />
           </div>
-          <div className="text-secondary-color text-2xl text-center mb-4">
+          <div className="text-secondary-color text-xl md:text-2xl text-center mb-4">
             <h2 className='font-bold'>{author}</h2>
             <h2>{date}</h2>
           </div>
-          <p className='text-primary text-slate-100 mx-10 mt-4 mb-6'>{text}</p>
+          <p className='text-primary text-slate-100 mx-4 md:mx-10 mt-4 mb-6'>{text}</p>
           <MainCTAComponent color="bg-slate-100" buttonText={buttonText} link="/about" />
         </div>
       </div>

@@ -26,9 +26,9 @@ export default function NavbarComponent() {
     }, [scrolled]);
 
     return (
-        <nav className={`${scrolled ? 'scrolled' : ''} h-14 w-full flex justify-between absolute px-[200px] py-2 z-20`}>
+        <nav className={`${scrolled ? 'scrolled' : ''} h-14 w-full flex justify-between absolute px-8 md:px-[200px] py-2 z-20`}>
             <img className='h-full' src="/logo.png" alt="think big logo" />
-            <ul className="nav-items uppercase w-1/2 flex justify-between items-center">
+            <ul className="nav-items hidden uppercase w-1/2 md:flex justify-between items-center">
                 {navItems.map((item, i) => {
                     return <li className='cursor-pointer hover:underline underline-offset-4' key={i}><Link to={item.link}>{item.name}</Link></li>
                 })}

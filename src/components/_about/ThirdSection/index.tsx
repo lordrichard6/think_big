@@ -19,10 +19,10 @@ const aboutPage = {
 
 export default function AboutThirdSection() {
     return (
-        <section className="flex flex-col items-center z-10 px-[200px] mt-24">
-            <div className="flex mb-16">
-                <img className="max-w-[460px] h-fit" src={aboutPage.image} alt="" />
-                <p className='text-secondary text-secondary-color mt-4 ml-10'>{aboutPage.text}</p>
+        <section className="flex flex-col items-center z-10 px-8 md:px-[200px] mt-24">
+            <div className="flex flex-col md:flex-row mb-16">
+                <img className="w-[460px] h-fit" src={aboutPage.image} alt="" />
+                <p className='text-secondary text-secondary-color mt-4 md:ml-10'>{aboutPage.text}</p>
             </div>
             <MainCTAComponent color="bg-primary-color" buttonText={aboutPage.btn} link="/signin" />
         </section>
